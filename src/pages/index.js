@@ -17,7 +17,7 @@ const JourneyIntro = styled.div`
 `
 
 const Intro = styled.p`
-  font-size: 16;
+  font-size: 1.4rem;
 
 `
 
@@ -37,7 +37,7 @@ export default () => (
         Welcome to the Cosmic Fisherman. I'm John Mihdi Cornyn, a developer, problem solver and troubleshooter.
         During the day I build web sites and mobile apps in React and React Native.
         By nights and weeekends I imbibe the <a href='https://www.gatsbyjs.org/'>Gatsby.js</a> framework
-        and mine for the gems of understanding <a href='https://reasonml.github.io/'>ReasonML</a>.
+        and mine for the gems of <a href='https://reasonml.github.io/'>ReasonML</a>.
         </Intro>
       </JourneyIntro>
       <ContactWrapper>
