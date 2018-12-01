@@ -1,7 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-const Header = () => (
-    <div></div>
+const Header = ({ siteTitle }) => (
+  <div>
+  {siteTitle}
+  </div>
 )
 
-export default Header;
+export default Header
