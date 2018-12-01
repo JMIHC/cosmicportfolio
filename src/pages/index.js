@@ -16,6 +16,11 @@ const JourneyIntro = styled.div`
   margin: 20px;
 `
 
+const Intro = styled.p`
+  font-size: 16;
+
+`
+
 const ContactWrapper = styled.div`
   max-width: 100px;
   margin-right: 20px;
@@ -28,12 +33,12 @@ const ContactItem = styled.div`
 export default () => (
     <Container>
       <JourneyIntro>
-        <p>
+        <Intro>
         Welcome to the Cosmic Fisherman. I'm John Mihdi Cornyn, a developer, problem solver and troubleshooter.
         During the day I build web sites and mobile apps in React and React Native.
         By nights and weeekends I imbibe the <a href='https://www.gatsbyjs.org/'>Gatsby.js</a> framework
         and mine for the gems of understanding <a href='https://reasonml.github.io/'>ReasonML</a>.
-        </p>
+        </Intro>
       </JourneyIntro>
       <ContactWrapper>
         <ContactItem>
