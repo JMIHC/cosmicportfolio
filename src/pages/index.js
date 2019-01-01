@@ -18,7 +18,6 @@ const JourneyIntro = styled.div`
 
 const Intro = styled.p`
   font-size: 1.4rem;
-
 `
 
 const ContactWrapper = styled.div`
@@ -28,16 +27,18 @@ const ContactWrapper = styled.div`
 
 const ContactItem = styled.div`
   margin-top: 20px;
+  @media (max-width: 400px) {
+    display:flex
+  }
 `
 
 export default () => (
     <Container>
       <JourneyIntro>
         <Intro>
-        Welcome to the Cosmic Fisherman. I'm John Mihdi Cornyn, a developer, problem solver and troubleshooter.
-        During the day I build web sites and mobile apps in React and React Native.
-        By nights and weeekends I imbibe the <a href='https://www.gatsbyjs.org/'>Gatsby.js</a> framework
-        and mine for the gems of <a href='https://reasonml.github.io/'>ReasonML</a>.
+        Welcome to the Cosmic Fisherman. I'm John Cornyn, a developer, problem solver and troubleshooter.
+        During the day I build for the web and mobile using React. By nights and weeekends I imbibe the <a href='https://www.gatsbyjs.org/'>Gatsby.js</a> framework and all things
+        pertaining to progressive web applications.
         </Intro>
       </JourneyIntro>
       <ContactWrapper>
@@ -46,9 +47,6 @@ export default () => (
         </ContactItem>
         <ContactItem>
         <SocialIcon url="https://www.linkedin.com/in/jmihc/"/>
-        </ContactItem>
-        <ContactItem>
-        <SocialIcon color="black" url="https://www.github.com/jmihc/"/>
         </ContactItem>
       </ContactWrapper>
     </Container>
