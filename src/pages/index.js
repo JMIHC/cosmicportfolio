@@ -36,8 +36,7 @@ export default () => (
       <JourneyIntro>
         <Intro>
         Welcome to the Cosmic Fisherman. I'm John Cornyn, a developer, problem solver and troubleshooter.
-        During the day I build for the web and mobile using React. By nights and weeekends I imbibe the <a href='https://www.gatsbyjs.org/'>Gatsby.js</a> framework and all things
-        pertaining to progressive web applications.
+        During the day I build for the web and mobile using React. By nights and weeekends I work with <a href='https://www.gatsbyjs.org/'>Gatsby.js</a> framework.
         </Intro>
       </JourneyIntro>
       <ContactWrapper>
