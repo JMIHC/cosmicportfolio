@@ -1,6 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import { SocialIcon } from 'react-social-icons';
+import React from 'react'
+import styled from 'styled-components'
+import { SocialIcon } from 'react-social-icons'
+import Form from '../components/form'
 
 const Container = styled.div`
   margin: 1rem auto;
@@ -15,38 +16,38 @@ const JourneyIntro = styled.div`
   margin: 20px;
 `
 
-const Intro = styled.p`
-  font-size: 1.4rem;
+const Main = styled.p`
+  font-size: 1rem;
 `
 
-const ContactWrapper = styled.div`
-  max-width: 100px;
-  margin-right: 20px;
+const Social = styled.div`
+  display: flex;
+  flex-direction: row;
 `
 
-const ContactItem = styled.div`
-  margin-top: 20px;
-  @media (max-width: 400px) {
-    display:flex
-  }
+const Item = styled.div`
+  margin: 5px;
 `
 
 export default () => (
-    <Container>
-      <JourneyIntro>
-        <Intro>
-        Welcome to the Cosmic Fisherman. I'm John Cornyn, a developer, problem solver and troubleshooter.
-        During the day I build for the web and mobile using React. By nights and weeekends I work with React frameworks and dive deeper into UX and Accessibility.
-        </Intro>
-      </JourneyIntro>
-      <ContactWrapper>
-        <ContactItem>
-        <SocialIcon url="https://twitter.com/johnmihdicornyn"/>
-        </ContactItem>
-        <ContactItem>
-        <SocialIcon url="https://www.linkedin.com/in/jmihc/"/>
-        </ContactItem>
-      </ContactWrapper>
-    </Container>
+  <Container>
+    <JourneyIntro>
+      <Main>
+        Welcome to Cosmic Fisherman. My name is John Cornyn. I'm a React/React
+        Native developer, problem solver and troubleshooter. I'll be adding more
+        to this site soon. In the meantime, check out my Github, LinkedIn or
+        send me a message in the form below.
+      </Main>
+      <Social>
+        <Item>
+          <SocialIcon url="https://twitter.com/johnmcornyn" />
+        </Item>
+        <Item>
+          <SocialIcon url="https://www.linkedin.com/in/jmihc/" />
+        </Item>
+      </Social>
+      <br />
+      <Form />
+    </JourneyIntro>
+  </Container>
 )
-
