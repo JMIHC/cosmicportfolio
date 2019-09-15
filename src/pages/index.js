@@ -40,7 +40,7 @@ export default () => (
       </Main>
       <Social>
         <Item>
-          <SocialIcon url="https://twitter.com/johnmcornyn" />
+          <SocialIcon url="https://github.com/JMIHC" />
         </Item>
         <Item>
           <SocialIcon url="https://www.linkedin.com/in/jmihc/" />
