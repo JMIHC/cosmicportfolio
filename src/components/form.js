@@ -35,7 +35,7 @@ export default class Form extends Component {
           <label>
             Message:
             <br />
-            <textarea name="message" />
+            <textarea name="message" rows={4} columns={50} />
           </label>
         </p>
         <p>
