@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ReCAPTCHA from 'react-google-recaptcha'
 
 export default class Form extends Component {
   render() {
@@ -10,11 +11,10 @@ export default class Form extends Component {
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
-        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
         <input type="hidden" name="form-name" value="cosmic-contact" />
         <p hidden>
           <label>
-            Don’t fill this out: <input name="bot-field" />
+            Do not this: <input name="bot-field" />
           </label>
         </p>
         <p>
@@ -39,6 +39,7 @@ export default class Form extends Component {
           </label>
         </p>
         <p>
+          <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} />
           <button type="submit" value="send message">
             Send
           </button>
