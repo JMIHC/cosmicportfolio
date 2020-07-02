@@ -39,7 +39,7 @@ export default class Form extends Component {
           </label>
         </p>
         <p>
-          <ReCAPTCHA sitekey={`${process.env.GATSBY_RECAPTCHA_KEY}`} />
+          <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} />
           <button type="submit" value="send message">
             Send
           </button>
